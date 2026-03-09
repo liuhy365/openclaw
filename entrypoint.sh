@@ -1,6 +1,8 @@
 #!/bin/sh
 
+echo "Changing dir"
 chown node:node /home/node/.openclaw
-chown node:node -R /home/node/.openclaw/workspace
+chown -R node:node /home/node/.openclaw/workspace
+echo "Changed dir"
 
 exec "$@"
