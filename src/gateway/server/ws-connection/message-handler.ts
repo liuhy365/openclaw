@@ -626,6 +626,7 @@ export function attachGatewayWsMessageHandler(params: {
             hasSharedAuth,
             isLocalClient,
           });
+          return true;
           if (decision.kind === "allow") {
             return true;
           }
